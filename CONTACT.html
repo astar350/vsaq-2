@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CONTACT</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="vsaq-38.css" rel="stylesheet">
+<link href="CONTACT.css" rel="stylesheet">
+<script>
+function submitForm1()
+{
+   var regexp;
+   var Editbox1 = document.getElementById('Editbox1');
+   if (!(Editbox1.disabled || Editbox1.style.display === 'none' || Editbox1.style.visibility === 'hidden'))
+   {
+      regexp = /^[A-Za-zÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ]*$/;
+      if (!regexp.test(Editbox1.value))
+      {
+         alert("Please enter only letter characters in the \"Nom\" field.");
+         Editbox1.focus();
+         return false;
+      }
+      if (Editbox1.value == "")
+      {
+         alert("Please enter a value for the \"Nom\" field.");
+         Editbox1.focus();
+         return false;
+      }
+      if (Editbox1.value.length < 2)
+      {
+         alert("Please enter at least 2 characters in the \"Nom\" field.");
+         Editbox1.focus();
+         return false;
+      }
+      if (Editbox1.value.length > 20)
+      {
+         alert("Please enter at most 20 characters in the \"Nom\" field.");
+         Editbox1.focus();
+         return false;
+      }
+   }
+   var Editbox2 = document.getElementById('Editbox2');
+   if (!(Editbox2.disabled || Editbox2.style.display === 'none' || Editbox2.style.visibility === 'hidden'))
+   {
+      regexp = /^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i;
+      if (!regexp.test(Editbox2.value))
+      {
+         alert("Please enter a valid email address.");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value == "")
+      {
+         alert("Please enter a value for the \"Courriel\" field.");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value.length < 2)
+      {
+         alert("Please enter at least 2 characters in the \"Courriel\" field.");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value.length > 20)
+      {
+         alert("Please enter at most 20 characters in the \"Courriel\" field.");
+         Editbox2.focus();
+         return false;
+      }
+   }
+   return true;
+}
+</script>
+</head>
+<body>
+<div id="container">
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb19.png" alt="WYSIWYG Web Builder" style="position:absolute;left:970px;top:1886px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_Text10" style="position:absolute;left:501px;top:1051px;width:970px;height:28px;text-align:center;z-index:6;">
+<span style="color:#979797;font-family:Arial;font-size:13px;">Copyright (c) 2024 VSAQ</span></div>
+<div id="wb_Form1" style="position:absolute;left:774px;top:500px;width:437px;height:301px;z-index:7;">
+<form name="Form1" method="post" action="mailto :vsaq@mail.com" enctype="multipart/form-data" id="Form1" onsubmit="return submitForm1()">
+<input type="text" id="Editbox1" style="position:absolute;left:177px;top:41px;width:180px;height:32px;z-index:0;" name="Nom" value="Nom" spellcheck="false">
+<input type="email" id="Editbox2" style="position:absolute;left:177px;top:121px;width:180px;height:28px;z-index:1;" name="Courriel" value="Courriel" spellcheck="false">
+<input type="submit" id="Button1" name="Envoyer" value="Envoyer" style="position:absolute;left:139px;top:224px;width:159px;height:44px;z-index:2;">
+<label for="" id="Label1" style="position:absolute;left:84px;top:41px;width:124px;height:35px;line-height:35px;z-index:3;">Nom</label>
+<label for="" id="Label2" style="position:absolute;left:65px;top:121px;width:118px;height:31px;line-height:31px;z-index:4;">Courriel</label>
+</form>
+</div>
+<div id="wb_Image1" style="position:absolute;left:510px;top:0px;width:169px;height:169px;z-index:8;">
+<img src="images/vsaq-removebg-preview.png" id="Image1" alt="" width="169" height="169"></div>
+<div id="wb_Image2" style="position:absolute;left:1300px;top:0px;width:169px;height:169px;z-index:9;">
+<img src="images/vsaq-removebg-preview.png" id="Image2" alt="" width="169" height="169"></div>
+<div id="wb_Image3" style="position:absolute;left:691px;top:43px;width:612px;height:71px;z-index:10;">
+<img src="images/vins sans alcool-Photoroom.png" id="Image3" alt="" width="612" height="71"></div>
+<div id="wb_Image4" style="position:absolute;left:912px;top:124px;width:388px;height:45px;z-index:11;">
+<a href="https://vsaq.square.site"><img src="images/BOUTIQUE ROUGE-Photoroom.png" id="Image4" alt="" width="388" height="45"></a></div>
+<div id="wb_ResponsiveMenu1" style="position:absolute;left:460px;top:225px;width:1005px;height:78px;z-index:12;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="./INDEX.html" class="nav-link">HOME</a></li>
+<li role="menuitem"><a href="./FESTILLANT.html" class="nav-link">FESTILLANT</a></li>
+<li role="menuitem"><a href="./VENDÔME.html" class="nav-link">VENDÔME</a></li>
+<li role="menuitem"><a href="./ENNIUS.html" class="nav-link">ENNIUS</a></li>
+<li role="menuitem"><a href="./FUENTEAMOR.html" class="nav-link">FUENTEAMOR</a></li>
+<li role="menuitem"><a href="./CONTACT.html" class="nav-link">CONTACT</a></li>
+</ul>
+</div>
+<div id="wb_Image5" style="position:absolute;left:728px;top:347px;width:517px;height:60px;z-index:13;">
+<img src="images/CONTACT-Photoroom.png" id="Image5" alt="" width="517" height="60"></div>
+</div>
+</body>
+</html>
